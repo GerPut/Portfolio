@@ -308,11 +308,11 @@ p {
         font-size: 40px;
     }
     p {
-        font-size: 10px;
+        font-size: 18px;
     }
     img {
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
     }
     .headshot-container {
         position: center;
