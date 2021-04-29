@@ -121,11 +121,11 @@
 
     <section class="section4" id="contact-me">
         <h2>Contact Me:</h2>
-        <form class="contact-form" netlify>
-            <input class="detailsinput" type="text" placeholder="Name">
-            <input class="detailsinput" type="email" placeholder="E-mail">
+        <form name="contact" method="POST" class="contact-form" data-netlify="true">
+            <input class="detailsinput" type="text" name="name" placeholder="Name">
+            <input class="detailsinput" type="email" name="email" placeholder="E-mail">
 
-            <textarea class="detailsinput" rows="10" placeholder="Message"></textarea>
+            <textarea class="detailsinput" rows="10" name="message" placeholder="Message"></textarea>
             <input type="submit" value="Send" class="contact-form-btn">
         </form>
     </section>
