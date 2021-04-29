@@ -304,6 +304,16 @@ p {
         justify-content: center;
         align-items: center;
     }
+    .about {
+        font-size: 40px;
+    }
+    p {
+        font-size: 10px;
+    }
+    img {
+        height: 30px;
+        width: 30px;
+    }
     .headshot-container {
         position: center;
     }
