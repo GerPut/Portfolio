@@ -8,7 +8,6 @@
     --darkblue: #0A192F;
     /*Fonts*/
     --mainfont: 'Jost', sans-serif;
-    /* --secondaryfont: 'Montserrat', sans-serif; */
     --secondaryfont: 'Roboto Mono', monospace;
 }
 
@@ -216,7 +215,6 @@ span {
     align-items: center;
     width: 200px;
     height: 200px;
-    /* position: absolute; */
     right: 670px;
     top: 520px;
     transform: rotate(145deg);
@@ -227,7 +225,6 @@ span {
     color: var(--blue);
     font-size: 150px;
     animation: spin 5s infinite linear;
-    /* -webkit-text-stroke: 1px var(--lightgray); */
 }
 
 #cog1 {
@@ -236,7 +233,6 @@ span {
     animation: spinanti 5s infinite linear;
     margin-top: -12px;
     margin-left: 64px;
-    /* -webkit-text-stroke: 1px var(--yellow); */
 }
 
 @keyframes spin {
@@ -362,7 +358,6 @@ p {
     margin-top: 20px;
     width: 350px;
     height: 250px;
-    /* border: 1px solid black; */
 }
 
 h4 {
@@ -486,7 +481,7 @@ hr {
         max-width: 300px;
     }
     .contactme {
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 
