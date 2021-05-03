@@ -171,6 +171,9 @@ span {
         display: none;
         margin: 20px;
     }
+    .navnavlink {
+        margin: -3px 10px;
+    }
     .name {
         display: none;
     }
@@ -205,6 +208,7 @@ span {
 #nav-list.show {
     display: flex;
     justify-content: left;
+    align-items: center;
     margin-top: 150px;
 }
 
