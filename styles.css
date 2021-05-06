@@ -435,6 +435,7 @@ hr {
 .gamename {
     font-family: 'Luckiest Guy', cursive;
     font-size: 32px;
+    letter-spacing: 1px;
 }
 
 .gamename:hover {
