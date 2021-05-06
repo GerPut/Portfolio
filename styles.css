@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;500;400;100;200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 :root {
     /*Colors*/
     --blue: #73F9BC;
@@ -422,6 +423,23 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.gameproject {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 35px;
+}
+
+.gamename {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 32px;
+}
+
+.gamename:hover {
+    cursor: pointer;
+    color: hotpink;
 }
 
 .my-github-button {
