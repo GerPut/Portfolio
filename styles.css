@@ -62,7 +62,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 3;
-    animation: appear 1s 3s forwards;
+    animation: appear 1s 1s forwards;
     opacity: 0;
 }
 
@@ -96,7 +96,7 @@ h3 {
     font-family: var(--mainfont);
     margin-left: 10px;
     opacity: 0;
-    animation: appear 1s 3s forwards;
+    animation: appear 1s 2s forwards;
     text-align: center;
 }
 
