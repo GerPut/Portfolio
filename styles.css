@@ -343,7 +343,7 @@ p {
     align-items: center;
     width: 400px;
     height: 500px;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 5px 5px 20px black;
     margin: 20px;
     padding: 10px;
@@ -423,24 +423,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.gameproject {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-    margin-top: 35px;
-}
-
-.gamename {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 32px;
-    letter-spacing: 1px;
-}
-
-.gamename:hover {
-    cursor: pointer;
-    color: hotpink;
 }
 
 .my-github-button {
