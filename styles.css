@@ -78,6 +78,7 @@ nav {
     align-items: center;
     margin-right: 50px;
     margin-bottom: 30px;
+    margin-top: 0 !important;
 }
 
 h1 {
@@ -205,7 +206,7 @@ span {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 0;
 }
 
 .cog-container {
