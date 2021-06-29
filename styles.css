@@ -10,6 +10,10 @@
     --secondaryfont: 'Roboto Mono', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--mainfont);
     margin: 0;
