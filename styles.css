@@ -10,6 +10,10 @@
     --secondaryfont: 'Roboto Mono', monospace;
 }
 
+* {
+    cursor: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -26,6 +30,30 @@ section {
 a {
     text-decoration: none;
     color: black;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+.follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 /* NAVBAR AND FRONT PAGE SECTION1*/
@@ -127,7 +155,6 @@ span {
     font-weight: 500;
     margin-top: 30px;
     margin-left: 30px;
-    cursor: pointer;
     border: 3px solid black;
     box-shadow: 3px 3px 0 0 black;
     transition: translateY(0.7);
@@ -136,7 +163,6 @@ span {
 .navnavlink:active {
     box-shadow: none;
     transform: translateY(3px);
-    cursor: pointer;
 }
 
 .navnavlink:hover {
@@ -398,7 +424,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     border: 1px solid var(--darkblue);
     border-radius: 20px;
     box-shadow: inset 0 0 8px 1px var(--lightgray);
@@ -439,7 +464,6 @@ hr {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
-    cursor: pointer;
     border: 3px solid black;
     box-shadow: 3px 3px 0 0 black;
     transition: translateY(0.7);
@@ -448,7 +472,6 @@ hr {
 .my-github-button:active {
     box-shadow: none;
     transform: translateY(3px);
-    cursor: pointer;
 }
 
 .my-github-button:hover {
@@ -526,7 +549,6 @@ hr {
     font-weight: 400;
     margin-bottom: 40px;
     border: 3px solid black;
-    cursor: pointer;
     box-shadow: 3px 3px 0 0 black;
     transition: translateY(0.7);
     color: black;
@@ -535,7 +557,6 @@ hr {
 .contact-form .contact-form-btn:active {
     box-shadow: none;
     transform: translateY(2px);
-    cursor: pointer;
 }
 
 .contact-form .contact-form-btn:focus {
