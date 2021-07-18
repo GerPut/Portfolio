@@ -113,7 +113,7 @@ nav {
     margin-top: 0 !important;
 }
 
-h1 {
+.hello {
     color: var(--lightgray);
     font-size: 200px;
     font-family: var(--mainfont);
@@ -219,7 +219,7 @@ span {
         flex-direction: column;
         align-items: center;
     }
-    h1 {
+    .hello {
         font-size: 100px;
         text-align: center;
         margin-top: 200px;
