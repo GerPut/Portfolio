@@ -1,4 +1,4 @@
-Personal Portfolio.
+## Personal Portfolio.
 
 This project contains all the files I used to create my personal portfolio/website.
 I mainly used HTML, CSS, and Javascript to complete my portfolio.
