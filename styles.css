@@ -377,7 +377,7 @@ p {
 }
 
 .project-card:hover {
-    box-shadow: 5px 20px black;
+    box-shadow: rgba(0, 0, 0, 0.884) 0px 5px 20px;
     transition: ease 0.5s;
 }
 
