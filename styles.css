@@ -3,12 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 :root {
     /*Colors*/
-    --blue: #73F9BC;
-    --lightgray: #CCD6F6;
-    --darkblue: #0A192F;
+    --first: #D8dbe2;
+    --second: #000;
+    --third: #fff;
     /*Fonts*/
     --mainfont: 'Jost', sans-serif;
-    /* --secondaryfont: 'Roboto Mono', monospace; */
     --secondaryfont: 'IBM Plex Sans', sans-serif;
 }
 
@@ -26,7 +25,7 @@ body {
 }
 
 section {
-    background-color: var(--lightgray);
+    background-color: var(--first);
 }
 
 a {
@@ -52,7 +51,7 @@ a {
     left: 0;
     width: 70px;
     height: 70px;
-    background-color: var(--blue);
+    background-color: var(--second);
     border-radius: 50%;
     opacity: 0.7;
     pointer-events: none;
@@ -61,17 +60,17 @@ a {
 /* NAVBAR AND FRONT PAGE SECTION1*/
 
 .section1 {
-    background-color: var(--darkblue);
+    background-color: var(--first);
     height: 100vh;
     width: 100%;
-    color: var(--lightgray);
 }
 
 .name {
     font-family: var(--mainfont);
-    color: black;
+    color: var(--first);
     font-size: 35px;
-    font-weight: 800;
+    letter-spacing: 1px;
+    font-weight: 700;
     margin-bottom: 35px;
     margin-left: 50px;
 }
@@ -80,15 +79,15 @@ a {
     font-size: 32px;
     margin-left: 0;
     text-shadow: none;
-    color: black;
+    color: var(--first);
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--blue);
-    box-shadow: rgba(115, 249, 188, 0.4) 0px 5px, rgba(115, 249, 188, 0.3) 0px 10px, rgba(115, 249, 188, 0.2) 0px 15px, rgba(115, 249, 188, 0.1) 0px 20px, rgba(115, 249, 188, 0.05) 0px 25px;
+    background-color: var(--second);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
     height: 90px;
     width: 100%;
     position: fixed;
@@ -116,11 +115,11 @@ nav {
 }
 
 .hello {
-    color: var(--lightgray);
+    color: var(--second);
+    font-weight: 900;
     font-size: 200px;
     font-family: var(--mainfont);
     margin: 0;
-    text-shadow: 4px 4px 0px black, 8px 8px 0px var(--blue);
 }
 
 h3 {
@@ -131,10 +130,11 @@ h3 {
     opacity: 0;
     animation: appear 1s 2s forwards;
     text-align: center;
+    color: var(--second)
 }
 
 span {
-    color: var(--blue);
+    color: var(--second);
 }
 
 .frontpage-text-area {
@@ -145,20 +145,21 @@ span {
 }
 
 .navnavlink {
-    background-color: var(--blue);
+    background-color: var(--first);
+    color: var(--second);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--secondaryfont);
+    font-family: var(--primaryfont);
     width: 100px;
     height: 50px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 30px;
     margin-left: 30px;
-    border: 3px solid black;
-    box-shadow: 3px 3px 0 0 black;
+    border: 3px solid var(--second);
+    box-shadow: 3px 3px 0 0 var(--first);
     transition: translateY(0.7);
 }
 
@@ -168,13 +169,17 @@ span {
 }
 
 .navnavlink:hover {
-    background-color: var(--lightgray);
+    background-color: var(--second);
+    color: var(--first);
+    box-shadow: 3px 3px 0 0 var(--third);
+    border-top: 1px solid var(--first);
+    border-left: 1px solid var(--first);
 }
 
 .logo {
     margin-bottom: 30px;
     margin-left: 10px;
-    color: black;
+    color: var(--second);
 }
 
 .hamburger {
@@ -190,11 +195,11 @@ span {
 @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
-        border: 3px solid black;
+        border: 3px solid var(--second);
         width: 150px;
-        box-shadow: 3px 3px 0 0 black;
+        box-shadow: 3px 3px 0 0 var(--second);
         background-color: transparent;
-        color: black;
+        color: var(--second);
         font-size: 30px;
         margin: 23px;
         align-self: center;
@@ -212,7 +217,7 @@ span {
     nav {
         display: flex;
         flex-direction: column-reverse;
-        background-color: var(--blue);
+        background-color: var(--first);
         width: 100%;
     }
     .frontpage-text-area {
@@ -255,13 +260,13 @@ span {
 }
 
 .fas.fa-cog {
-    color: var(--blue);
+    color: var(--second);
     font-size: 150px;
     animation: spin 5s infinite linear;
 }
 
 #cog1 {
-    color: var(--lightgray);
+    color: var(--second);
     font-size: 120px;
     animation: spinanti 5s infinite linear;
     margin-top: -12px;
@@ -297,6 +302,7 @@ h2 {
     font-size: 50px;
     text-align: center;
     font-family: var(--secondaryfont);
+    letter-spacing: -2px;
 }
 
 p {
@@ -316,8 +322,8 @@ p {
     width: 300px;
     height: 450px;
     margin-top: 40px;
-    border: 3px solid black;
-    box-shadow: 5px 5px 20px black;
+    border: 3px solid var(--second);
+    box-shadow: 5px 5px 20px var(--second);
     opacity: 0.8;
 }
 
@@ -424,21 +430,21 @@ hr {
     font-family: var(--secondaryfont);
     font-size: 1rem;
     font-weight: 200;
-    color: var(--lightgray);
+    color: var(--first);
     text-align: center;
-    background-color: var(--darkblue);
+    background-color: var(--second);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--darkblue);
+    border: 1px solid var(--second);
     overflow: none;
 }
 
 .project-link:hover {
-    background-color: var(--blue);
-    color: black;
-    border: 1px solid black;
-    box-shadow: 0 0 5px 2px black;
+    background-color: var(--first);
+    color: var(--second);
+    border: 1px solid var(--second);
+    box-shadow: 0 0 5px 2px var(--second);
 }
 
 .paragraph-subtext {
@@ -459,8 +465,8 @@ hr {
     width: 200px;
     height: 50px;
     text-decoration: none;
-    color: black;
-    background-color: var(--blue);
+    color: var(--second);
+    background-color: var(--first);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,8 +474,8 @@ hr {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
-    border: 3px solid black;
-    box-shadow: 3px 3px 0 0 black;
+    border: 3px solid var(--second);
+    box-shadow: 3px 3px 0 0 var(--second);
     transition: translateY(0.7);
 }
 
@@ -479,7 +485,8 @@ hr {
 }
 
 .my-github-button:hover {
-    background-color: var(--lightgray);
+    background-color: var(--second);
+    color: var(--first)
 }
 
 /*CONTACT ME SECTION4*/
@@ -490,7 +497,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding: 80px;
-    background-color: var(--lightgray);
+    background-color: var(--first);
 }
 
 .contact-form {
@@ -500,8 +507,8 @@ hr {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 80px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px var(--second);
     padding-top: 40px;
 }
 
@@ -525,8 +532,8 @@ hr {
     font-family: var(--secondaryfont);
     font-weight: 400;
     border: none;
-    box-shadow: inset 1px 1px 5px 1px black;
-    color: black;
+    box-shadow: inset 1px 1px 5px 1px var(--second);
+    color: var(--second);
 }
 
 .contact-form textarea {
@@ -540,7 +547,7 @@ hr {
 }
 
 .contact-form .contact-form-btn {
-    background-color: var(--blue);
+    background-color: var(--second);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -549,13 +556,13 @@ hr {
     height: 50px;
     text-align: center;
     letter-spacing: 0.5px;
-    font-size: 1.1rem;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 40px;
-    border: 3px solid black;
-    box-shadow: 3px 3px 0 0 black;
+    border: 3px solid var(--second);
+    /* box-shadow: 3px 3px 0 0 black; */
     transition: translateY(0.7);
-    color: black;
+    color: var(--first);
 }
 
 .contact-form .contact-form-btn:active {
@@ -568,14 +575,15 @@ hr {
 }
 
 .contact-form .contact-form-btn:hover {
-    background-color: rgb(204, 214, 246);
+    background-color: var(--first);
+    color: var(--second);
 }
 
 /*FOOTER SECTION5*/
 
 footer {
-    background-color: var(--darkblue);
-    color: var(--lightgray);
+    background-color: var(--second);
+    color: var(--first);
     text-align: center;
     padding: 80px;
 }
