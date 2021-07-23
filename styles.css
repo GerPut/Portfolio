@@ -154,8 +154,8 @@ span {
     width: 100px;
     height: 50px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 700;
     margin-top: 30px;
     margin-left: 30px;
     border: 3px solid var(--second);
@@ -446,6 +446,7 @@ hr {
     justify-content: center;
     border: 1px solid var(--second);
     overflow: none;
+    display: none;
 }
 
 .project-link:hover {
@@ -516,8 +517,16 @@ hr {
     align-items: center;
     margin-bottom: 80px;
     border-radius: 3px;
-    box-shadow: 5px 5px 20px var(--second);
+    box-shadow: 0px 5px 20px var(--second);
     padding-top: 40px;
+    opacity: 0;
+    transition: all 2s ease-out;
+    transform: scale(0.5)
+}
+
+.contact-form.fade-forward {
+    opacity: 1;
+    transform: scale(1)
 }
 
 @media only screen and (max-width: 1000px) {
