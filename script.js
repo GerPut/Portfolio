@@ -26,6 +26,15 @@ var ourScene = new ScrollMagic.Scene({
     reverse: false
 }).setClassToggle('.project-card', 'fade-in').addTo(controller)
 
+//Contact Form animation with Scroll Magic  
+var controllerTwo = new ScrollMagic.Controller();
+
+var ourSceneTwo = new ScrollMagic.Scene({
+    triggerElement: '.contact-form',
+    reverse: false
+
+}).setClassToggle('.contact-form', 'fade-forward').addTo(controllerTwo)
+
 
 //Variables Navbar Menu
 const hamburgerButton = document.getElementById('hamburger')
