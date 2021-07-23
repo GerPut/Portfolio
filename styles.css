@@ -40,7 +40,8 @@ a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--third);
+    background-color: var(--second);
     z-index: 2000;
     pointer-events: none;
 }
@@ -52,9 +53,11 @@ a {
     width: 70px;
     height: 70px;
     background-color: var(--second);
+    background-color: var(--third);
     border-radius: 50%;
     opacity: 0.7;
     pointer-events: none;
+    z-index: 1000;
 }
 
 /* NAVBAR AND FRONT PAGE SECTION1*/
@@ -76,7 +79,7 @@ a {
 }
 
 #smallcog {
-    font-size: 32px;
+    font-size: 40px;
     margin-left: 0;
     text-shadow: none;
     color: var(--first);
@@ -174,6 +177,7 @@ span {
     box-shadow: 3px 3px 0 0 var(--third);
     border-top: 1px solid var(--first);
     border-left: 1px solid var(--first);
+    transition: 0.5s ease-in-out;
 }
 
 .logo {
@@ -392,7 +396,7 @@ p {
 
 .project-card:hover {
     box-shadow: rgba(0, 0, 0, 0.884) 0px 5px 20px;
-    transition: ease 0.5s;
+    transition: ease-in-out 0.7s;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -438,22 +442,19 @@ hr {
     font-family: var(--secondaryfont);
     font-size: 1rem;
     font-weight: 200;
-    color: var(--first);
+    color: var(--second);
     text-align: center;
-    background-color: var(--second);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--second);
     overflow: none;
-    display: none;
 }
 
 .project-link:hover {
-    background-color: var(--first);
-    color: var(--second);
+    background-color: var(--second);
+    color: var(--first);
     border: 1px solid var(--second);
-    box-shadow: 0 0 5px 2px var(--second);
+    transition: 1s ease-in-out;
 }
 
 .paragraph-subtext {
@@ -594,6 +595,7 @@ hr {
 .contact-form .contact-form-btn:hover {
     background-color: var(--first);
     color: var(--second);
+    transition: 0.7s ease-in-out;
 }
 
 /*FOOTER SECTION5*/
