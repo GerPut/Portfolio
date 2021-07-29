@@ -30,7 +30,7 @@ section {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--second);
 }
 
 .cursor {
@@ -197,11 +197,13 @@ span {
 }
 
 @media only screen and (max-width: 1000px) {
+    .cursor, .follower {
+        display: none;
+    }
     .hamburger {
         display: block;
         border: 3px solid var(--second);
         width: 150px;
-        box-shadow: 3px 3px 0 0 var(--second);
         background-color: transparent;
         color: var(--second);
         font-size: 30px;
