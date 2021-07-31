@@ -26,13 +26,20 @@ var ourScene = new ScrollMagic.Scene({
     reverse: false
 }).setClassToggle('.project-card', 'fade-in').addTo(controller)
 
+//About Info animation with Scroll Magic
+var controllerThree = new ScrollMagic.Controller();
+
+var ourSceneThree = new ScrollMagic.Scene({
+    triggerElement: '.about',
+    reverse: false
+}).setClassToggle('.information', 'fade-in').addTo(controllerThree)
+
 //Contact Form animation with Scroll Magic  
 var controllerTwo = new ScrollMagic.Controller();
 
 var ourSceneTwo = new ScrollMagic.Scene({
     triggerElement: '.contact-form',
     reverse: false
-
 }).setClassToggle('.contact-form', 'fade-forward').addTo(controllerTwo)
 
 
