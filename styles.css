@@ -302,6 +302,14 @@ span {
 .information {
     display: flex;
     flex-direction: row;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.5s ease;
+}
+
+.information.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 h2 {
