@@ -9,7 +9,6 @@
     /*Fonts*/
     --mainfont: 'Jost', sans-serif;
     --secondaryfont: 'IBM Plex Sans', sans-serif;
-    --secondaryfont: 'gilroyextrabold';
 }
 
 * {
@@ -556,7 +555,7 @@ hr {
     font-family: var(--mainfont);
     font-weight: 400;
     border: none;
-    box-shadow: inset 1px 1px 5px 1px var(--second);
+    /* box-shadow: inset 1px 1px 5px 1px var(--second); */
     color: var(--second);
 }
 
