@@ -138,8 +138,8 @@ span {
 }
 
 .nav-list-link {
-    background-color: var(--first);
-    color: var(--second);
+    background-color: var(--second);
+    color: var(--first);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,8 +151,6 @@ span {
     font-weight: 700;
     margin-top: 30px;
     margin-left: 30px;
-    border: 3px solid var(--second);
-    box-shadow: 3px 3px 0 0 var(--first);
     transition: translateY(0.7);
 }
 
@@ -167,7 +165,7 @@ span {
     box-shadow: 3px 3px 0 0 var(--third);
     border-top: 1px solid var(--first);
     border-left: 1px solid var(--first);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .hamburger {
