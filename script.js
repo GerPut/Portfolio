@@ -15,7 +15,7 @@ gsap.from('.hello', { duration: 1, x: '-100vw', delay: 0.5, ease: 'power.in' })
 gsap.from('.cog-container', { duration: 1, x: '200vw', delay: 0.5, ease: 'power.in' })
 
 //Spinning links navbar animation GSAP
-gsap.fromTo('.navnavlink', { opacity: 0, scale: 0, rotation: 720 }, { duration: 1, delay: 2.5, opacity: 1, scale: 1, rotation: 0 })
+gsap.fromTo('.nav-list-link', { opacity: 0, scale: 0, rotation: 720 }, { duration: 1, delay: 2.5, opacity: 1, scale: 1, rotation: 0 })
 
 
 //Scrolling Animations with Scroll Magic
