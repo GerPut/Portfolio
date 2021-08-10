@@ -188,7 +188,10 @@ span {
         margin-top: 100px;
     }
     .intro {
-        font-size: 30px;
+        font-size: 40px;
+    }
+    span {
+        font-size: 40px;
     }
 }
 
@@ -234,6 +237,9 @@ span {
         margin-top: 200px;
     }
     .intro {
+        font-size: 40px;
+    }
+    span {
         font-size: 40px;
     }
     .fas.fa-cog {
