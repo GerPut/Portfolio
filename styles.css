@@ -63,7 +63,7 @@ a {
 /* NAVBAR AND FRONT PAGE SECTION1*/
 
 .section1 {
-    background-color: var(--first);
+    background: url(images/josep-martins-l3-erg8nPRU-unsplash.jpg) no-repeat center center fixed;
     height: 100vh;
     width: 100%;
 }
@@ -117,7 +117,7 @@ nav {
 
 .intro {
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: var(--mainfont);
     margin-left: 10px;
     opacity: 0;
@@ -127,7 +127,10 @@ nav {
 }
 
 span {
-    color: var(--second);
+    font-size: 72px;
+    background: -webkit-linear-gradient(#5E000C, #C1000F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .frontpage-text-area {
