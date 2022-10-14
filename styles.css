@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     /*Colors*/
@@ -7,7 +6,7 @@
     --second: #000;
     --third: #fff;
     /*Fonts*/
-    --mainfont: 'Jost', sans-serif;
+    --mainfont: 'Inter', sans-serif;
     --secondaryfont: 'Heebo', sans-serif;
 }
 
@@ -21,6 +20,8 @@ html {
 
 body {
     font-family: var(--mainfont);
+    font-weight: 100;
+    line-height: 1.6;
     margin: 0;
 }
 
